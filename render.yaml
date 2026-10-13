@@ -1,0 +1,13 @@
+# Render Blueprint — one-click deploy of the agenteval dashboard + API.
+# https://render.com/docs/blueprint-spec
+services:
+  - type: web
+    name: agenteval
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    healthCheckPath: /api/health
+    autoDeploy: true
+    envVars:
+      - key: PORT
+        value: "8000"

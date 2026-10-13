@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / dashboard
+node_modules/
+web/node_modules/
+web/dist/
+
+# Local artifacts & env
+artifacts/
+.env
+.DS_Store
